@@ -50,6 +50,7 @@
 //   マージしてみます。
 	// Do any additional setup after loading the view, typically from a nib.
     //numa = 0;
+//  テストテストテストテスト
     numb = 0;
     number = 0;
     //ope=0;
