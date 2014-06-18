@@ -47,6 +47,7 @@
 {
     [super viewDidLoad];
 //    テスト
+//     テスト２
 	// Do any additional setup after loading the view, typically from a nib.
     //numa = 0;
     numb = 0;
