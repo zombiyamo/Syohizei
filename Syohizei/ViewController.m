@@ -14,34 +14,7 @@
 
 @implementation ViewController
 
-//@synthesize sc;
 
-
-//
-//- (IBAction)SegChanged:(id)sender {
-//
-//    switch (sc.selectedSegmentIndex) {
-//        case 0:
-//            numb = number/1.05;
-//            numb = numb*1.08;
-//             self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
-//            ope=0;
-//            break;
-//            
-//        case 1:
-//          
-//            ope=1;
-//             numb = number*1.08;
-//            self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
-//            
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    
-//}
 
 - (void)viewDidLoad
 {
@@ -53,7 +26,7 @@
 //  テストテストテストテスト
     numb = 0;
     number = 0;
-    //ope=0;
+
   
     self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
     self.kanelabel.text = [NSString stringWithFormat:@"%.0f円",number];
@@ -152,14 +125,9 @@
 }
 
 -(IBAction)ikoru{
-    //numa = number*1.05;
-    if (ope==0) {
-        numb = number/1.05;
-        numb = numb*1.08;
-    }else if (ope==1){
+
         numb = number*1.08;
-    }
-   
+    
     self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
 }
 
@@ -176,15 +144,7 @@
     SLComposeViewController *twitterPostVC =
     [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     
-    
-    if (ope==0) {
-           [twitterPostVC setInitialText:[NSString stringWithFormat:@"消費税5％で%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
-    }else if (ope==1){
-    
-       [twitterPostVC setInitialText:[NSString stringWithFormat:@"税抜きで%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
-    }
-    
-   
+    [twitterPostVC setInitialText:[NSString stringWithFormat:@"税抜きで%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
     
     [self presentViewController:twitterPostVC animated:YES completion:nil];
     
@@ -194,15 +154,7 @@
     SLComposeViewController *facebookPostVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook
                                                ];
     
-    
-    if (ope==0) {
-        [facebookPostVC setInitialText:[NSString stringWithFormat:@"消費税5％で%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
-
-            }else if (ope==1){
-                
-                [facebookPostVC setInitialText:[NSString stringWithFormat:@"税抜きで%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
-
-           }
+    [facebookPostVC setInitialText:[NSString stringWithFormat:@"税抜きで%.0f円の商品が\n消費税8％になると\n%.0f円になります\n#shohizei",number,numb]];
     
     [self presentViewController:facebookPostVC animated:YES completion:nil];
     

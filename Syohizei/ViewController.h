@@ -16,7 +16,7 @@
     double number;
     double pushedbtn;
 //     UISegmentedControl *sc;
-    int ope;
+//    int ope;
 }
 @property (weak, nonatomic) IBOutlet UILabel *beforelabel;
 @property (weak, nonatomic) IBOutlet UILabel *afterlabel;
