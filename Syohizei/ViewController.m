@@ -141,6 +141,11 @@
 }
 
 - (IBAction)myTwBtn:(UIButton *)sender {
+    
+    numb = number*1.08;
+    
+    self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
+    
     SLComposeViewController *twitterPostVC =
     [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     
@@ -151,6 +156,11 @@
 }
 
 - (IBAction)myFbBtn:(UIButton *)sender {
+    
+    numb = number*1.08;
+    
+    self.afterlabel.text =[NSString stringWithFormat:@"%.0f円",numb];
+    
     SLComposeViewController *facebookPostVC = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook
                                                ];
     
