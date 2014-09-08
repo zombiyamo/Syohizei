@@ -21,7 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *beforelabel;
 @property (weak, nonatomic) IBOutlet UILabel *afterlabel;
 @property (weak, nonatomic) IBOutlet UILabel *kanelabel;
-//@property (nonatomic, retain) IBOutlet UISegmentedControl *sc;
+
 
 -(IBAction)bt1;
 -(IBAction)bt2;
@@ -35,5 +35,5 @@
 -(IBAction)bt0;
 -(IBAction)ikoru;
 -(IBAction)clear;
-//- (IBAction)SegChanged:(id)sender;
+
 @end
