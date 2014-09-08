@@ -4,7 +4,7 @@
 //
 //  Created by miyamoto haruna on 2014/02/17.
 //  Copyright (c) 2014年 miyamoto haruna. All rights reserved.
-//
+//hogehhoge
 
 #import "ViewController.h"
 
@@ -19,11 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    テスト
-//   マージしてみます。
-	// Do any additional setup after loading the view, typically from a nib.
-    //numa = 0;
-//  テストテストテストテスト
+
     numb = 0;
     number = 0;
 
